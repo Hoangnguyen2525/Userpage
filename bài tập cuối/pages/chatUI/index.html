@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-ots bg-t"></div>
+        <div class="row chat-border">
+            <div class="col-lg-8 chat_container">
+                <div class="row chat_content_border">
+                    <div class=" col-lg-1 nav_bar">
+                        <div class="col-lg-12 avatar_nav">
+                            <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg" class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="80" height="80">
+                        </div>
+                        <div class="dropdown-divider" style="border-color: #a5b5c1 !important;"></div>
+                        <div class="col-lg-12 menu_group">
+                            <div class="col-lg-12 nav_items active_nav" id="nav_Active"><i class="far fa-comment-dots fa-2x"></i></div>
+                            <div class="col-lg-12 nav_items" id="nav_item1"><i class="fas fa-user fa-2x"></i></div>
+                            <!-- <div class="col-lg-12 nav_items" id="nav_item2"><i class="fas fa-user-friends fa-2x"></i>
+                            </div>
+                            <div class="col-lg-12 nav_items" id="nav_item3"><i class="fas fa-envelope fa-2x"></i></div> -->
+                            <div class="col-lg-12 nav_items" id="nav_item4"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="dropdown-divider" style="border-color: #a5b5c1 !important;"></div>
+                        <div class="col-lg-12 footer_nav" id="logOutBtn"><i class="fas fa-sign-out-alt fa-2x"></i></div>
+                    </div>
+                    <div class="col-lg-3 chat_left hide">
+                        <div class="col-lg-12 head_left">
+                            <div class=" input_head_left ">
+                                <div class="row createConversation">
+                                    <div class="col-lg-10 " style="padding: 0 !important;">
+                                        <form>
+                                            <div class="input-group mb-3 input-group-search">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text " id="iconSearch"><i
+                                                            class="fas fa-search"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control search_input" id="inputSearch" placeholder="Search">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- <div class="col-lg-2 pl-3 pt-1">
+                                        <div class="head_right"><i class="fa fa-plus " aria-hidden="true"></i></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider pb-3" style="border-color: #303841 !important;"></div>
+                        <!--__________________________________________________________________ chat_box_______________________________ -->
+                        <div class="chat_box_left" style="height:auto;">
+                            <div class="row  chat_box ">
+                                <div class="col-lg-3 avatar_chat_box"> <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg" class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="45" height="45">
+                                </div>
+                                <div class="col-lg-7 content_chat_box">
+                                    <h4>Alina Judy</h4>
+                                    <p>I miss you! Call me...</p>
+                                </div>
+                                <div class="col-lg-2 ping_chat_box">
+                                    <span class="ping-chat">1</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--_________________________________________________________________________________________________ -->
+                    </div>
+                    <div class="col-lg-6 chat_center hide">
+                        <div class="row head_center_chat">
+                            <div class="col-lg-5 head_center_chat_left">
+                                <h6 style="margin : 0 !important;" class="nameChat"></h6>
+                                <p style="margin : 0 !important;"><span class="circle"></span> online</p>
+                            </div>
+                            <div class="col-lg-3 head_center_chat_center"></div>
+                            <div class="col-lg-4 head_center_chat_right">
+                                <ul class="nav justify-content-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding : 0 !important;"><i
+                                                class="fas fa-folder call-group"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding : 0 !important;"><i
+                                                class="fas fa-phone-alt call-group"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding : 0 !important;"><i
+                                                class="fas fa-video call-group "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider" style="border-color: #eaeeee !important;"></div>
+                        <!--_____________________________________________________  chat area_____________________________________________________ -->
+                        <div class="row chat-area ">
+                            <!--_____________________________________________________  chat area_____________________________________________________ -->
+                            <!-- <div class="row mt-2    mb-2 chat-left-site">
+                                <div class="col-lg-1 d-flex align-items-center avatar_chat_area">
+                                    <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                        class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="50"
+                                        height="50">
+                                </div>
+                                <div class="col-lg-11 pl-2 chat-content-area">
+                                    <p>Hi, how are you VTH? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Recusandae, optio fugit? Pariatur velit expedita recusandae architecto nam
+                                        commodi at saepe sit voluptatibus, eum itaque! Nam quos laboriosam error
+                                        repellat amet? </p>
+                                </div>
+                            </div>
+                            <div class="row mt-2    mb-2 chat-left-site">
+                                <div class="col-lg-1 d-flex align-items-center avatar_chat_area">
+                                    <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                        class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="50"
+                                        height="50">
+                                </div>
+                                <div class="col-lg-11 pl-2 chat-content-area">
+                                    <p>Hi, how are you VTH?</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2    mb-4  chat-right-site">
+                                <div class="col-lg-11  pr-2 chat-content-area-right">
+                                    <p>Hi Judy i am good tnx how about you?</p>
+                                </div>
+                                <div class="col-lg-1 d-flex align-items-center avatar_chat_area">
+                                    <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                        class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="50"
+                                        height="50">
+                                </div>
+                            </div>
+                            <div class="row  mt-2   mb-2 chat-left-site">
+                                <div class="col-lg-1 d-flex align-items-center avatar_chat_area">
+                                    <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                        class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="50"
+                                        height="50">
+                                </div>
+                                <div class="col-lg-11 pl-2 chat-content-area">
+                                    <p>I am good too, thank you for your chat template</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2    mb-4  chat-right-site">
+                                <div class="col-lg-11  pr-2 chat-content-area-right">
+                                    <p>You are welcome</p>
+                                </div>
+                                <div class="col-lg-1 d-flex align-items-center avatar_chat_area">
+                                    <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                        class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="50"
+                                        height="50">
+                                </div>
+                            </div>
+                            <div class="row mt-2    mb-2 chat-left-site">
+                                <div class="col-lg-1 d-flex align-items-center avatar_chat_area">
+                                    <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                        class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="50"
+                                        height="50">
+                                </div>
+                                <div class="col-lg-11 pl-2 chat-content-area">
+                                    <p>I am looking for your next templates</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2    mb-4  chat-right-site">
+                                <div class="col-lg-11  pr-2 chat-content-area-right">
+                                    <p>Ok, thank you have a good day</p>
+                                </div>
+                                <div class="col-lg-1 d-flex align-items-center avatar_chat_area">
+                                    <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                        class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="50"
+                                        height="50">
+                                </div>
+                            </div>
+                            <div class="row mt-2   mb-2 chat-left-site">
+                                <div class="col-lg-1 d-flex align-items-center avatar_chat_area">
+                                    <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                        class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="50"
+                                        height="50">
+                                </div>
+                                <div class="col-lg-11 pl-2 chat-content-area">
+                                    <p>Bye, see you</p>
+                                </div>
+                            </div> -->
+                            <!-- ___________________________________________________________________________________________________________________ -->
+                        </div>
+                        <div class="row chat-input">
+                            <div class="col-lg-2 icon-chat">
+                                <i class="fas fa-smile iconBtn"></i>
+                                <i class="fas fa-paperclip"></i>
+                            </div>
+                            <div class="col-lg-9 input-chat">
+                                <form>
+                                    <div class="input-group mb-3 input-group-lg chat-input-size">
+                                        <textarea name="" class="form-control type_msg" placeholder="Aa"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-1 sendBtn">
+                                <i class="fas fa-location-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 chat_right hide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SetUp-Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-storage.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-storage.js"></script>
+
+    <script>
+        const firebaseApp = firebase.initializeApp({
+            apiKey: "AIzaSyCp8DS5wi7KKAdKOLqneSVlHAw-66GUt1U",
+            authDomain: "myapp2-9d046.firebaseapp.com",
+            projectId: "myapp2-9d046",
+            storageBucket: "myapp2-9d046.appspot.com",
+            messagingSenderId: "610205539960",
+            appId: "1:610205539960:web:d583bf28f8b17b4e6b578d"
+        });
+        const db = firebaseApp.firestore();
+        const auth = firebaseApp.auth();
+    </script>
+    <!--  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../Chat/renderUserChat.js" type="module"></script>
+    <script src="../Chat/showChat/render.js" type="module"></script>
+    <script src="./querry.js" type="module"></script>
+</body>
+
+</html>
