@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-ots bg-t"></div>
+        <div class="row chat-border">
+            <div class="col-lg-8 chat_container">
+                <div class="row chat_content_border">
+                    <div class=" col-lg-1 nav_bar">
+                        <div class="col-lg-12 avatar_nav">
+                            <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="80" height="80">
+                        </div>
+                        <div class="dropdown-divider" style="border-color: #a5b5c1 !important;"></div>
+                        <div class="col-lg-12 menu_group">
+                            <div class="col-lg-12 nav_items active_nav" id="nav_Active"><i
+                                    class="far fa-comment-dots fa-2x"></i></div>
+                            <div class="col-lg-12 nav_items" id="nav_item1"><i class="fas fa-user fa-2x"></i></div>
+                            <div class="col-lg-12 nav_items" id="nav_item2"><i class="fas fa-user-friends fa-2x"></i>
+                            </div>
+                            <div class="col-lg-12 nav_items" id="nav_item3"><i class="fas fa-envelope fa-2x"></i></div>
+                            <div class="col-lg-12 nav_items" id="nav_item4"><i class="fa fa-cog fa-2x"
+                                    aria-hidden="true"></i></div>
+                        </div>
+                        <div class="dropdown-divider" style="border-color: #a5b5c1 !important;"></div>
+                        <div class="col-lg-12 footer_nav" id="logOutBtn"><i class="fas fa-sign-out-alt fa-2x"></i></div>
+                    </div>
+                    <div class="col-lg-3 chat_left">
+                        <div class="col-lg-12 head_left">
+                            <div class=" input_head_left ">
+                                <div class="row createConversation">
+                                    <div class="col-lg-10 " style="padding: 0 !important;">
+                                        <form>
+                                            <div class="input-group mb-3 input-group-search">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text " id="iconSearch"><i
+                                                            class="fas fa-search"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control search_input" id="inputSearch"
+                                                    placeholder="Search">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- <div class="col-lg-2 pl-3 pt-1">
+                                        <div class="head_right"><i class="fa fa-plus " aria-hidden="true"></i></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider pb-3" style="border-color: #303841 !important;"></div>
+                        <!--__________________________________________________________________ chat_box_______________________________ -->
+                        <div class="chat_box_left" style="height:auto;">
+
+                        </div>
+                        <!--_________________________________________________________________________________________________ -->
+                    </div>
+                    <div class="col-lg-6 chat_center">
+                        <div class="row head_center_chat">
+                            <div class="col-lg-5 head_center_chat_left">
+                                <h6 style="margin : 0 !important;" class="nameChat"></h6>
+                                <p style="margin : 0 !important;"><span class="circle"></span> online</p>
+                            </div>
+                            <div class="col-lg-3 head_center_chat_center"></div>
+                            <div class="col-lg-4 head_center_chat_right">
+                                <ul class="nav justify-content-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding : 0 !important;"><i
+                                                class="fas fa-folder call-group"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding : 0 !important;"><i
+                                                class="fas fa-phone-alt call-group"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding : 0 !important;"><i
+                                                class="fas fa-video call-group "></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Add new user to
+                                                            your chat</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body addUserModal">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="chatItem" class="chatUserLable"></label>
+                                                                <input type="email" class="form-control userEmail"
+                                                                    id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                                    placeholder="Enter email">
+                                                                <small id="emailHelp" class="form-text text-muted">We'll
+                                                                    never share your email with anyone else.</small>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button"
+                                                            class="btn btn-primary addUser">Add</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider" style="border-color: #eaeeee !important;"></div>
+                        <!--_____________________________________________________  chat area_____________________________________________________ -->
+                        <div class=" chat-area ">
+                            <!--_____________________________________________________  chat area_____________________________________________________ -->
+
+                            <!-- ___________________________________________________________________________________________________________________ -->
+                        </div>
+                        <div class="row chat-input">
+                            <div class="col-lg-2 icon-chat">
+                                <i class="fas fa-smile iconBtn"></i>
+                                <i class="fas fa-paperclip"></i>
+                            </div>
+                            <div class="col-lg-9 input-chat">
+                                <form>
+                                    <div class="input-group mb-3 input-group-lg chat-input-size">
+                                        <textarea name="" class="form-control type_msg" placeholder="Aa"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-1 sendBtn">
+                                <i class="fas fa-location-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 chat_right hide">
+                        <div class="dropDown">
+                            <input type="text" name="" id="" class="textBox" placeholder="Custom chats" readonly>
+                            <div class="option">
+                                <div class="small-option">
+                                    <ion-icon name="color-palette-outline"></ion-icon> Change theme
+                                </div>
+                                <div class="small-option">
+                                    <ion-icon name="heart-circle-outline"></ion-icon> Change icon
+                                </div>
+                                <div class="small-option">
+                                    <ion-icon name="language-outline"></ion-icon> Change nickname
+                                </div>
+                                <div class="small-option">
+                                    <ion-icon name="search-outline"></ion-icon> Search in chat
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-11 user_page" >
+                        <div class="row">
+                            <div class="avtUser col-lg-11">
+                                <img src="https://vcdn1-giaitri.vnecdn.net/2013/09/09/Big-Moon-Above-River-1378713411.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wV3BzDufSDkPN8rM8fpyWg"
+                                    class="rounded-circle mx-auto d-block  " alt="Cinque Terre" width="80" height="80">
+                            </div>
+                            <div class="infor-user col-lg-11">
+                                <div class="option">
+                                    <div class="small-option">
+                                        <ion-icon name="person-circle-outline"></ion-icon> Name: <span
+                                            class="name"></span>
+                                    </div>
+                                    <div class="small-option">
+                                        <ion-icon name="call-outline"></ion-icon> Phone number: <span
+                                            class="phone"></span>
+                                    </div>
+                                    <div class="small-option">
+                                        <ion-icon name="mail-outline"></ion-icon> Email: <span class="email"></span>
+                                    </div>
+                                    <div class="small-option">
+                                        <ion-icon name="lock-closed-outline"></ion-icon> Password: <span
+                                            class="password"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- SetUp-Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseApp = firebase.initializeApp({
+            apiKey: "AIzaSyAXxdV5faBVUweTdIKcBHTm14YMBhDeJV4",
+            authDomain: "login-3c1e4.firebaseapp.com",
+            projectId: "login-3c1e4",
+            storageBucket: "login-3c1e4.appspot.com",
+            messagingSenderId: "1051827842277",
+            appId: "1:1051827842277:web:36988bfed6610766fe780c"
+        });
+        const db = firebaseApp.firestore();
+        const auth = firebaseApp.auth();
+    </script>
+    <!--  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../Chat/renderUserChat.js" type="module"></script>
+    <script src="../Chat/showChat/render.js" type="module"></script>
+    <script src="querry.js" type="module"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
